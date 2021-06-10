@@ -94,6 +94,7 @@
      <Compile Include="Assets\Modern UI Pack\Scripts\Window\WindowManager.cs" />
      <Compile Include="Assets\Modern UI Pack\Scripts\Window\WindowManagerButton.cs" />
      <Compile Include="Assets\Scripts\ButtonManger.cs" />
+     <Compile Include="Assets\Scripts\UIManager.cs" />
      <Compile Include="Assets\Scripts\WebCam.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
