@@ -16,18 +16,34 @@ public class UIManager : MonoBehaviour
     public GameObject hourSlider;
     public GameObject minSlider;
     public GameObject secSlider;
+    public TMP_Text Time;
 
     // Start is called before the first frame update
 
     public void onChangeHourVolume(){
         hour = (int)hourSlider.GetComponent<Slider>().value;
+        changeTime(hour, min, sec);
     }
 
     public void onChangeMinVolume(){
-        
+        min = (int)minSlider.GetComponent<Slider>().value;
+        changeTime(hour, min, sec);
     }
 
     public void onChangeSecVolume(){
-        
+        sec = (int)secSlider.GetComponent<Slider>().value;
+        changeTime(hour, min, sec);
+    }
+
+    public void updateTime(){
+        Time.text = string.Format("{0:D2}",  hour) + ":" +
+        string.Format("{0:D2}",  min) + ":" +
+        string.Format("{0:D2}",  sec);
+    }
+
+    public void changeTime(int h, int m ,int s){
+        Time.text = string.Format("{0:D2}",  h) + ":" +
+        string.Format("{0:D2}",  m) + ":" +
+        string.Format("{0:D2}",  s);
     }
 }
